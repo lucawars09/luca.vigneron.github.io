@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Image/favicon.ico"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+  <link rel="stylesheet" href="design.css">
+
+	<title>L'histoire</title>
+
+<div class="Menu">
+  <div class="dropdown">
+    <button class="dropbtn"><a href="Histoire.html">L'Histoire</a></button>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="anime.html">L'anime</a></button>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="infos.html">En savoir plus</a></button>
+        
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn"><a href="mailto: one.piece.non.official@gmail.com?subject=Le rêve d'un pirate&body=Dans le monde de One Piece, chaque pirate possède un rêve à atteindre. Être la personne la plus forte, la plus riche, être heureux... Et toi, quel serait ton rêve ? -> ">Contact</a></button>
+  </div>
+  <div class="dropdown">
+      <button class="dropbtn"><a href="form.html">Formulaire</a></button>
+  </div>
+</div> 
+
+
+      <div class="logo">
+      	<a href="Onepiece.html"><img src="Image/OP.jpg"></a>
+      </div>
+
+	<div class="bannerI">
+    <div class="bannerI-content">
+      <h1 class="titre"> En savoir plus</h1>
+
+    </div>
+  </div>
+</head>
+
+<body>
+  <h2>Produit dérivé de One Piece</h2>
+        <style>
+            .slider {
+                margin: 0 auto;
+                width: 500px;
+                height: 300px;
+                overflow: hidden;
+            }
+
+            .slider-images {
+                display: flex;
+                border: 10px solid black;
+            }
+
+            .slider-images img {
+                width: 500px;
+                height: 300px;
+            }
+            h2 {
+              text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="slider-images">
+                <img src="Image/figurine.jpg"/>
+                <img src="Image/dvd.jpg"/>
+                <img src="Image/netflix.jpg"/>
+                <img src="Image/lumiere.jpg"/>
+                <img src="Image/monopoly.jpg"/>
+                <img src="Image/uno.jpg"/>
+            </div>
+        </div>
+        <script>
+          let sliderImages = document.querySelectorAll('.slider-images img');
+          let currentImage = 0;
+            // Définition de la fonction de défilement des images
+            const slideImages = () => {
+                // Cacher l'image actuel
+            sliderImages[currentImage].style.display = 'none';
+
+            // Incrémenter l'image courante
+            currentImage = (currentImage + 1) % sliderImages.length;
+
+            // Afficher l'image suivante
+            sliderImages[currentImage].style.display = 'block';
+            }
+
+            // Appel de la fonction toutes les 2 secondes
+            setInterval(slideImages, 2000);
+        </script>
+
+</body>
+
+<br>
+
+<footer id="baspage">
+
+  <center>
+      <h2>One Piece</h2>
+      <h3>Réseaux sociaux</h3>
+    <center>
+      <br>
+
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://www.facebook.com/onepieceofficial"><img class="RS" src="Image/fcb.png"></a>
+    </span>
+  </button>
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://www.instagram.com/onepiece_staff/"><img class="RS" src="Image/Instagram.png"></a>
+    </span>
+  </button>
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://twitter.com/Eiichiro_Staff"><img class="RS" src="Image/twitter.png"></a>
+    </span>
+  </button>
+</footer>
+
+
+
+
+</html>

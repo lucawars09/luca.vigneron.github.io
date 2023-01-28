@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Image/favicon.ico"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+  <link rel="stylesheet" href="design.css">
+
+  <div class="Menu">
+  <div class="dropdown">
+    <button class="dropbtn"><a href="Histoire.html">L'Histoire</a></button>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="anime.html">L'anime</a></button>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="infos.html">En savoir plus</a></button>
+        
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn"><a href="mailto: one.piece.non.official@gmail.com?subject=Le rêve d'un pirate&body=Dans le monde de One Piece, chaque pirate possède un rêve à atteindre. Être la personne la plus forte, la plus riche, être heureux... Et toi, quel serait ton rêve ? -> ">Contact</a></button>
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn"><a href="form.html">Formulaire</a></button>
+  </div>
+
+
+</div>
+
+<div class="logo">
+        <a href="Onepiece.html"><img src="Image/OP.jpg"></a>
+</div>
+
+  
+</head>
+
+<form>
+  <center>
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="prenom">Prénom :</label><br>
+  <input type="text" id="prenom" name="prenom"><br>
+  <label for="mail">Mail :</label><br>
+  <input type="text" id="mail" name="mail"><br>
+  <label for="age">Age :</label><br>
+  <input type="number" id="age" name="age"><br><br>
+  <label for="mer">Région d'origine :</label><br>
+  <select id="mer" name="mer">
+    <option value="North Blue">North Blue</option>
+    <option value="South Blue">South Blue</option>
+    <option value="East Blue">East Blue</option>
+    <option value="West Blue">West Blue</option>
+    <option value="Grand Line">Grand Line</option>
+  </select><br><br>
+
+  
+  <input type="button" value="Réinitialiser" id="reset-button">
+
+  <div>
+    <h2>Vos réponses :</h2>
+    <p>Nom : <span id="nom-answer"></span></p>
+    <p>Prénom : <span id="prenom-answer"></span></p>
+    <p>Mail : <span id="mail-answer"></span></p>
+    <p>Age: <span id="age-answer"></span></p>
+    <p>Région d'origine: <span id="mer-answer"></span></p>
+</div>
+
+
+
+<script>
+    const nomInput = document.getElementById('nom');
+    const prenomInput = document.getElementById('prenom');
+    const mailInput = document.getElementById('mail');
+    const ageInput = document.getElementById('age');
+    const merInput = document.getElementById('mer');
+
+    const nomAnswer = document.getElementById('nom-answer');
+    const prenomAnswer = document.getElementById('prenom-answer');
+    const mailAnswer = document.getElementById('mail-answer');
+    const ageAnswer = document.getElementById('age-answer');
+    const merAnswer = document.getElementById('mer-answer');
+
+    document.querySelector('form').addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (confirm('Êtes-vous sûr de vouloir envoyer les informations ?')) {
+            const nom = nomInput.value;
+            const prenom = prenomInput.value;
+            const mail = mailInput.value;
+            const age = ageInput.value;
+            const mer = merInput.value;
+
+            // Envoie des informations à l'adresse e-mail spécifiée
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 500) {
+                        alert('Les informations ont été envoyées avec succès !');
+                    } else {
+                        alert('Une erreur s\'est produite lors de l\'envoi des informations.');
+                    }
+                }
+            };
+            xhr.send('nom=' + nom + '&prenom=' + prenom + '&age=' + age + '&mer=' + mer);
+        }
+    });
+
+    const resetButton = document.getElementById('reset-button');
+      resetButton.addEventListener('click', () => {
+        document.getElementById('nom').value = '';
+        document.getElementById('prenom').value = '';
+        document.getElementById('mail').value = '';
+        document.getElementById('age').value = '';
+        document.getElementById('mer').value = '';
+        document.getElementById('nom-answer').innerHTML = '';
+        document.getElementById('prenom-answer').innerHTML = '';
+        document.getElementById('mail-answer').innerHTML = '';
+        document.getElementById('age-answer').innerHTML = '';
+        document.getElementById('mer-answer').innerHTML = '';
+});
+        
+
+
+    nomInput.addEventListener('input', (event) => {
+        nomAnswer.innerText = event.target.value;
+    });
+
+    prenomInput.addEventListener('input', (event) => {
+        prenomAnswer.innerText = event.target.value;
+    });
+
+    mailInput.addEventListener('input', (event) => {
+        mailAnswer.innerText = event.target.value;
+    });
+
+    ageInput.addEventListener('input', (event) => {
+        ageAnswer.innerText = event.target.value;
+    });
+
+    merInput.addEventListener('input', (event) => {
+        merAnswer.innerText = event.target.value;
+    });
+
+</script>
+
+</center>
+
+</form> 
+
+<footer>
+    <center>
+      <h2>One Piece</h2>
+      <h3>Réseaux sociaux</h3>
+    <center>
+      <br>
+
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://www.facebook.com/onepieceofficial"><img class="RS" src="Image/fcb.png"></a>
+    </span>
+  </button>
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://www.instagram.com/onepiece_staff/"><img class="RS" src="Image/Instagram.png"></a>
+    </span>
+  </button>
+
+  <button class="button is-large">
+    <span class="icon">
+      <a href="https://twitter.com/Eiichiro_Staff"><img class="RS" src="Image/twitter.png"></a>
+    </span>
+  </button>
+
+</footer>
+
+</html>

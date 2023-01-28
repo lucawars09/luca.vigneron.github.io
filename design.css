@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+.banner {
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://upload.wikimedia.org/wikipedia/fr/thumb/1/1a/Logo_One_piece.svg/1200px-Logo_One_piece.svg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 100px 50px;
+}
+
+.banner-content {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+.LienH {
+  color: white;
+}
+
+#Histoire p:hover{ /* changement de couleur du texte lorsque le curseur passe dessus */
+    color: #FF4500;
+}
+
+
+#Histoire{
+  background-color: skyblue;
+  font-family : 'Popins', sans-serif;
+  font-size : 18px;
+}
+
+h1 {
+
+  font-family : 'Popins', sans-serif;
+  font-size : 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+
+.bannerH{
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://gaak.fr/wp-content/uploads/2022/09/fond-decran-one-piece-edited.jpg);
+  background-size: cover;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 100px 50px;
+
+}
+
+.bannerH-content{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+.bannerA{
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2020/05/06/node_749505/46982263/public/2020/05/06/B9723396273Z.1_20200506170704_000%2BG02FVMCAG.1-0.jpg?itok=qntyo5h_1588777631);
+  background-size: cover;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 100px 50px;
+
+}
+
+.bannerA-content{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+.bannerI{
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2022/08/10/node_1215261/55552352/public/2022/08/10/B9731759652Z.1_20220810164412_000%2BGN0L1UFCS.1-0.jpg?itok=dXvp6O6R1660144224);
+  background-size: cover;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 100px 50px;
+
+}
+
+.bannerI-content{
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+
+.cards {
+  padding: 15px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-element {
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-family : 'Popins', sans-serif;
+  font-size : 25px;
+}
+
+.my-btn {
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.my-btn-border {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
+
+.my-border-black-btn {
+  background-color: transparent;
+  border: 5px solid black;
+  color: white;
+
+}
+
+.titre{
+  display: flex;
+  justify-content : center;
+  align-items : center;
+  color : white;
+  font-size: 100px;
+}
+
+.titrep {
+
+  display: flex;
+  justify-content : center;
+  align-items : center;
+  color : white;
+  font-family : 'Popins', sans-serif;
+  font-size : 20px;
+
+}
+
+.boutonR{
+  color:  white;
+}
+
+.firsttexte {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end
+  color : white;
+  font-family: sans-serif;
+}
+
+
+} 
+
+body{
+color: black;
+
+}
+
+.logo{
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  max-width : 100%;
+  height : auto;
+}
+
+#N1 {
+    background-color: #B0C4DE;
+
+}
+#N2 {
+    background-color: #6495ED;
+}
+#NL {
+    background-color: #6495ED;
+  }
+
+#N3 {
+    background-color: #B0C4DE;
+
+}
+#N4 {
+    background-color: #B0C4DE;
+}
+#N5 {
+    background-color: #6495ED;
+
+}
+#N6 {
+    background-color: #B0C4DE;
+}
+
+#tfooter1{
+  text-align: center;
+  background-color: #A9A9A9;
+}
+
+#Titres{
+  text-align: center;
+  background-color: #A9A9A9;
+}
+
+#tfooter2 {
+  text-align: center;
+  background-color: #1C2833;
+  color: #F7DC6F;
+}
+
+#titreT{
+  background-color: #1C2833;
+  color: #F7DC6F
+}
+
+#titreTable{
+  text-align: center;
+  background-color: #A9A9A9;
+}
+
+table{
+  text-align: center;
+}
+
+#Tableau {
+    margin: 100 auto;
+    display:flex;
+    justify-content: center;
+  }
+
+footer { /* pied de tableau page d'accueil */
+      
+      color: white;
+      background-color: black;
+      font-size : 20px;
+      padding: 100px;
+      text-align: center;
+    }
+
+b {
+  color : white;
+
+}
+
+.dropbtn {
+  background-color: #FEA347 ;
+  color: #AD4F09;
+  padding: 12px;
+  font-size: 16px;
+  border: dashed brown;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4661B;
+  min-width: 160px;
+  box-shadow: 10px 5px 5px #FF4500;
+  transform: translate(5px) translateY(5px);
+
+
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+
+}
+
+/*.dropbtn a:hover {
+  transform: translate(5px) translateY(5px);
+  box-shadow: 10px 5px 5px #FF4500;
+}*/
+
+.dropdown-content a:hover {background-color: #0000CD;}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown:hover .dropbtn {background-color: darkorange;}
+
+form fieldset {
+  color: yellow;
+  /*background-color: ;*/
+}
+
+form input {
+  background-color: darkorange;
+
+}
+
+form option  {
+  background-color: darkorange;
+
+}
+
+form textarea  {
+  background-color: darkorange;
+
+}
+form select {
+  background-color: darkorange;
+}
+
+#NA{
+  background-color: #E67E22;
+}
+#NB {
+  background-color: #C0392B;
+}
+#TitresA{
+  background-color: #1C2833;
+  color: #F7DC6F;
+}
+#titreT{
+
+  background-color: black;
+  color: #F7DC6F;
+}
+
+#CorpsA {
+
+  background-color: black;
+  color: whitesmoke;
+  font-family : 'Popins', sans-serif;
+}
+
+#CorpsA td{
+  color : black;
+}
+
+#video {
+  display : flex;
+  justify-content: center;
+}
+
+#liste-rs{
+
+      padding: 20px;
+      font-size: 30px;
+      width: 60px;
+      text-decoration: none;
+      margin: 5px 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
